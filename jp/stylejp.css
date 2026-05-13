@@ -1,0 +1,635 @@
+/* fonts family */
+
+:root {
+    --heading-font: "Noto Serif JP", serif;
+    --body-font: "Murecho", sans-serif;
+    --bs-btn-font-family: "Murecho", sans-serif;
+}
+
+/* fonts color */
+
+:root {
+    --bs-blue: #2c2ce2;
+    --bs-red: #e63946;
+    --bs-orange: #F5E9E9;
+    --bs-yellow: #f6ec67;
+    --bs-green: #F5F8F1;
+    --bs-teal: #EFE8EF;
+    --bs-cyan: #F3F3F3;
+    --bs-black: #0c0c0c; 
+    --bs-white: #f8f9ff;
+    --bs-gray: #777777; 
+    
+    --bs-link-color: #111111;
+    --bs-link-color-rgb: 17, 17, 17;
+    --bs-link-hover-color: #e63946;
+    --bs-link-hover-color-rgb: 240, 117, 108;
+    
+    --bs-primary: #2c2ce2;
+    --bs-primary-rgb: 44, 44, 226;
+    --bs-body-color: #111111;   
+    --bs-info: #C3C3C3; 
+    --bs-light-text-emphasis: #c3c3c3;
+    
+    --swiper-pagination-color: #e63946;
+}
+
+body , body  [data-bs-theme=light] {
+    --bs-blue: #2c2ce2;
+    --bs-red: #e63946;
+    --bs-orange: #F5E9E9;
+    --bs-yellow: #f6ec67;
+    --bs-green: #F5F8F1;
+    --bs-teal: #EFE8EF;
+    --bs-cyan: #F3F3F3;
+    --bs-black: #0c0c0c; 
+    --bs-white: #f8f9ff;
+    --bs-gray: #777777;   
+    --bs-info: #C3C3C3;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--bs-black);
+    --bs-btn-bg: var(--bs-orange);
+    --bs-btn-border-color: var(--bs-orange);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-black);
+    --bs-btn-hover-border-color: var(--bs-black);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-bg: var(--bs-black); 
+}
+
+#filters .btn-primary {
+    background-color: var(--bs-black) !important;
+    border-color: var(--bs-black) !important;
+    color: var(--bs-white) !important;
+    transition: all 0.3s ease;
+}
+
+#filters .btn-primary.is-checked {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
+
+#filters .btn-primary {
+    transition: all 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+    #filters .btn-primary:hover {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+        opacity: 0.9;
+    }
+}
+
+#filters .btn-primary:active {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.pagination {
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-font-size: 1rem;
+    --bs-pagination-color: var(--bs-link-color);
+    --bs-pagination-bg: var(--bs-body-bg);
+    --bs-pagination-border-width: var(--bs-border-width);
+    --bs-pagination-border-color: var(--bs-border-color);
+    --bs-pagination-border-radius: var(--bs-border-radius);
+    --bs-pagination-hover-color: var(--bs-link-hover-color);
+    --bs-pagination-hover-bg: var(--bs-black);
+    --bs-pagination-hover-border-color: var(--bs-border-color);
+    --bs-pagination-focus-color: var(--bs-link-hover-color);
+    --bs-pagination-focus-bg: var(--bs-secondary-bg);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-pagination-active-color: var(--bs-black);
+    --bs-pagination-active-bg: #F5E9E9;
+    --bs-pagination-active-border-color: #F5E9E9;
+    --bs-pagination-disabled-color: var(--bs-secondary-color);
+    --bs-pagination-disabled-bg: var(--bs-secondary-bg);
+    --bs-pagination-disabled-border-color: var(--bs-border-color);
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+.bg-gray {
+    background-color: var(--bs-gray) !important;
+}
+
+.bg-yellow {
+    background-color: var(--bs-yellow) !important;
+}
+
+.bg-green {
+    background-color: var(--bs-green) !important;
+}
+
+.bg-teal {
+    background-color: var(--bs-teal) !important;
+}
+
+.bg-black {
+    background-color: var(--bs-black) !important;
+}
+
+.navbar-nav a.nav-link {
+    transition: color 0.3s ease;
+}
+
+@media (hover: hover) {
+    .navbar-nav a.nav-link:hover {
+        color: var(--bs-yellow) !important;
+    }
+}
+
+.navbar-nav a.nav-link:active {
+    color: var(--bs-yellow) !important;
+    opacity: 0.7;
+}
+
+body {
+    background-color: var(--bs-white) !important;
+    color: var(--bs-body-color);
+    font-family: var(--body-font);
+}
+
+/* font size */
+h1, h2, h3, .display-1, .display-2, .display-3 {
+    font-family: var(--heading-font);
+    font-weight: 700; /* Sesuaikan ketebalan */
+}
+
+h4, h5, h6, .nav-link, .btn, p {
+    font-family: var(--body-font);
+}
+
+.p-6 {
+    padding: 4rem !important;
+}
+
+/* navbar */
+.navbar svg {
+    color: #111111;
+}
+
+.navbar {
+    background-color: var(--bs-white) !important;
+    transition: transform 0.4s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    transform: translateY(0);
+}
+
+.navbar.hide {
+    transform: translateY(-100%);
+}
+
+.navbar:has(.offcanvas.show) {
+    transform: translateY(0) !important;
+}
+
+.offcanvas.offcanvas-end {
+    position: fixed !important;
+    top: 0 !important;
+    height: 100vh !important;
+    z-index: 1060 !important;
+    background-color: var(--bs-black) !important;
+    visibility: visible !important;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out !important;
+    transform: translateX(100%); 
+}
+
+.offcanvas.offcanvas-end.show {
+    transform: translateX(0) !important; 
+}
+
+.offcanvas.offcanvas-end:not(.show) {
+    transform: translateX(100%) !important;
+}
+
+.offcanvas-body .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    transform: none !important;
+    width: 100% !important;
+}
+
+.bluetext {
+    color: var(--bs-blue) !important;
+}
+
+/* banner color */
+
+.banner {
+    color: var(--bs-black);
+}
+
+.text-bracket {
+    font-weight: 400 !important;
+    font-size: 0.2em !important;
+    margin-left: 15px;
+    opacity: 0.6;
+    font-family: 'Murecho', sans-serif !important;
+    
+    transform: translateY(1.7rem) !important;
+    display: inline-block;
+}
+
+.font-notoserifjp {
+    font-family: 'Noto Serif JP', serif;
+    display: block;
+    line-height: 0.8;
+    font-size: 1.1em !important;
+}
+
+@media (max-width: 767px) {
+    .text-bracket {
+        transform: translateY(0.8rem) !important; 
+        margin-left: 8px;
+        font-size: 0.3em !important;
+    }
+}
+
+/* line height */
+
+p.a {
+    line-height: 10%;
+}
+
+.lh-small {
+    line-height: 80%;
+}
+
+.ls-4 {
+    letter-spacing: 0.2rem;
+}
+
+/* masonry */
+.btn.is-checked {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn-outline-dark {
+    border-color: var(--bs-black) !important;
+    color: var(--bs-black) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--bs-yellow) !important;
+    border-color: var(--bs-yellow) !important;
+    color: var(--bs-black) !important;
+}
+
+/* paragraph color */
+.postf {
+    color: var(--bs-gray);
+}
+
+.postg {
+    color: var(--bs-info);
+}
+
+/* width of container */
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1460px;
+    }
+}
+
+/* testimonial */
+
+.testimonial-card {
+  background: var(--bs-black);
+  color: var(--bs-white);
+}
+
+.testimonial-card .postd {
+    color: var(--bs-yellow);
+}
+
+.testimonial-swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--bs-gray) !important;
+    opacity: 0.5;
+    width: 7px;
+    height: 7px;
+    margin: 0 5px !important;
+    transition: all 0.3s ease;
+}
+
+.testimonial-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--bs-black) !important;
+    opacity: 1;
+    width: 30px;
+    border-radius: 5px;
+}
+
+/* 3.5 FAQs
+/*----------------------------------------------*/
+.accordion-item {
+    overflow: hidden;
+    background: var(--bs-white) !important;
+    border: 1px solid var(--bs-black) !important;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: var(--bs-black) !important;
+    color: var(--bs-white) !important;
+    border-radius: inherit !important;
+    box-shadow: none !important;
+}
+
+h5 button.accordion-button {
+    font-family: var(--body-font);
+    background: var(--bs-black) !important;
+    color: var(--bs-white) !important;
+}
+
+/* Saat kotak diklik (Terbuka) */
+.accordion-button:not(.collapsed) {
+    background: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button::after, 
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z'/%3E%3C/svg%3E") !important;
+}
+
+.box-education {
+    background-color: var(--bs-black) !important;
+    color: var(--bs-white) !important;
+}
+.box-education h3, .box-education h5 {
+    color: var(--bs-white) !important;
+}
+.box-education .text-dark-emphasis {
+    color: #c3c3c3 !important;
+}
+
+.box-interests {
+    background-color: var(--bs-yellow) !important;
+    color: var(--bs-black) !important;
+}
+.box-interests h3, .box-interests h5 {
+    color: var(--bs-black) !important;
+}
+.box-interests .text-dark-emphasis {
+    color: #c3c3c3 !important;
+}
+.box-interests p {
+    color: rgba(12, 12, 12, 0.8) !important;
+}
+
+.box-experiences {
+    background-color: var(--bs-white) !important;
+    color: var(--bs-black) !important;
+    border: 1px solid var(--bs-black) !important;
+}
+.box-experiences h3, .box-experiences h5 {
+    color: var(--bs-black) !important;
+}
+.box-experiences .text-dark-emphasis {
+    color: var(--bs-gray) !important;
+}
+
+.box-software {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
+
+section.bg-yellow {
+    background-color: var(--bs-white) !important;
+}
+
+section.bg-yellow h2, 
+section.bg-yellow h6, 
+section.bg-yellow p {
+    color: var(--bs-black) !important;
+}
+textarea.form-control {
+    resize: none !important;
+    min-height: 120px;
+}
+
+section.bg-yellow .btn-dark {
+    background-color: var(--bs-yellow) !important;
+    border-color: var(--bs-yellow) !important;
+    color: var(--bs-black) !important;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--bs-yellow) !important;
+    box-shadow: 0 0 0 0.25 margin rgba(255, 0, 0, 0.1);
+    outline: 0;
+}
+
+.font-murecho-bold {
+    font-family: 'Murecho', sans-serif;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+}
+
+.text-title-small {
+    font-size: 1.3rem !important;
+    font-family: 'Murecho', sans-serif;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    margin-bottom: -20px;
+}
+
+/* Styling untuk "Works" */
+.text-title-large {
+    font-size: 6rem !important;
+    font-family: 'Noto Serif JP', serif;
+    font-style: italic;
+    line-height: 1; /* Memperkecil jarak baris agar menempel ke teks atas */
+    display: inline-block;
+}
+
+/* Responsive untuk Mobile agar tidak kebesaran */
+@media (max-width: 768px) {
+    .text-title-large {
+        font-size: 3.5rem !important;
+    }
+}
+
+/* styles page */
+/* 
+a {
+    color: rgba(var(--bs-black), var(--bs-link-opacity, 1));
+    text-decoration: none;
+}
+
+a:hover {
+    --bs-black: var(--bs-link-hover-color-rgb);
+} */
+
+/* blog */
+
+.page-link {
+    color: var(--bs-black);
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: var(--bs-pagination-hover-color);
+    background-color: var(--bs-pagination-hover-bg);
+    border-color: var(--bs-pagination-hover-border-color);
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: var(--bs-pagination-active-bg);
+    border-color: var(--bs-pagination-active-border-color);
+}
+
+.list-unstyled li a, 
+.col-6 h6 a {
+    transition: color 0.3s ease;
+    color: var(--bs-primary) !important;
+}
+
+@media (hover: hover) {
+    .list-unstyled li a:hover, 
+    .col-6 h6 a:hover {
+        color: var(--bs-yellow) !important;
+    }
+}
+
+.list-unstyled li a:active, 
+.col-6 h6 a:active {
+    color: var(--bs-yellow) !important;
+    opacity: 0.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+.offcanvas {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.offcanvas-backdrop.show {
+    backdrop-filter: blur(4px);
+    transition: opacity 0.4s ease;
+}
+
+#logo {
+    height: 42px; /* Menyesuaikan dengan tinggi logo lama */
+    width: auto;  /* Agar rasio tetap terjaga dan tidak gepeng */
+    object-fit: contain;
+}   
+
+#logofooter {
+    height: 57px; /* Menyesuaikan dengan tinggi logo lama */
+    width: auto;  /* Agar rasio tetap terjaga dan tidak gepeng */
+    object-fit: contain;
+}   
+
+.display-1 {
+    font-family: var(--heading-font); /* Memastikan pakai EB Garamond */
+    font-size: 6rem;                  /* Ubah angka ini untuk memperbesar (default sekitar 5rem) */
+    font-weight: 700;                 /* Mengatur ketebalan font */
+    line-height: 1;                 /* Mengatur jarak antar baris agar tidak terlalu renggang */
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 3.5rem;            /* Ukuran lebih kecil untuk layar ponsel */
+    }
+}
+
+#portfolio-grid {
+    margin: 0 auto !important;
+    float: none !important;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item {
+    float: left; /* Menjaga agar Isotope tetap bisa menghitung posisi */
+}
+
+@media (min-width: 1200px) {
+    #portfolio-grid {
+        max-width: 1140px; /* Menyesuaikan dengan standar container Bootstrap */
+    }
+}
+
+html, body {
+    overflow-x: hidden; /* Mencegah scroll horizontal secara paksa */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Pastikan row tidak membuat overflow */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.accordion-collapse {
+    transition: height 0.4s ease !important;
+}
+
+/* Menargetkan section yang di dalamnya ada accordion */
+section:has(.accordion) {
+    padding-bottom: 80px !important; /* Memberi ruang agar tidak menabrak bawah */
+    margin-bottom: 20px;
+    clear: both;
+}
+
+/* Memperhalus gerakan semua accordion di dalam section tersebut */
+section .accordion-collapse {
+    transition: all 0.35s ease-in-out !important;
+}
+
+section .collapsing {
+    transition: all 0.35s ease-in-out !important;
+}
+
+h1.display-1 {
+    line-height: 0.1em; /* Nilai di bawah 1.0em akan merapatkan baris secara proporsional */
+    display: flex;
+    flex-direction: column; 
+    gap: 0; 
+}
+
+.font-murecho-bold {
+    font-family: 'Murecho', sans-serif;
+    font-weight: 800;
+    display: block;
+    line-height: 1; /* Mengunci ruang atas-bawah font Inter */
+}
+
+.font-garamond {
+    font-family: 'Noto Serif JP', serif;
+    display: block;
+    line-height: 0.8; /* Garamond biasanya punya 'ascent' tinggi, jadi kita kecilkan dikit */
+}
